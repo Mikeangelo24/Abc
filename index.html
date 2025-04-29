@@ -42,13 +42,8 @@ document.onkeydown = function(e) {
      return false;
     }      
 }
-</style>
-</head>
-<body>
-<script>
 
-
-
+  
 addEventListener("fetch", event => {
     event.respondWith(handleRequest(event.request));
 });
@@ -81,3 +76,10 @@ async function handleRequest(request) {
             status: 500,
             headers: { "Content-Type": "text/plain" }
         });
+</style>
+</head>
+<body>
+<script>
+
+
+
