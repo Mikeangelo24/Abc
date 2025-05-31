@@ -1,7 +1,10 @@
 services:
-  dproxy:
+  daddylive-proxy:
     build: .
-    container_name: dproxy
+    container_name: daddylive-proxy
     ports:
       - "7860:7860"
-    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+
+
